@@ -14,6 +14,7 @@ class MainViewModel:ViewModel() {
 
     fun onClickedChange() {
         text.value = "Changed Text"
+        
     }
 
 
