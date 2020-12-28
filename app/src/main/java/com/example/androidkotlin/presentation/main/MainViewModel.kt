@@ -14,11 +14,7 @@ class MainViewModel(
     ):ViewModel() {
 
 
-    val loginLiveData: MutableLiveData<String> = MutableLiveData()
-
-    init {
-        text.value = "Texte LiveData"
-    }
+    val loginLiveData: MutableLiveData<LoginStatus> = MutableLiveData()
 
 
     fun onClickedLogin(emailUser: String, password: String) {
@@ -26,10 +22,14 @@ class MainViewModel(
 
             val user = getUserUseCase.invoke(emailUser) // ADD PASSWORD HERE
           //  val user = getUserUseCase.invoke("test")
-            if(user != null){
-
+            val loginStatus = if(user != null){
+                LoginSuccess(user.email)
             }else{
+                LoginError
+            }
 
+            withContext(Dispatchers.Main) {
+                loginLiveData.value = loginStatus
             }
         }
 

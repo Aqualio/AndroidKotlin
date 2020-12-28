@@ -1,4 +1,7 @@
 package com.example.androidkotlin.presentation.main
 
-class LoginStatus {
-}
+sealed class LoginStatus
+
+data class LoginSuccess(val email: String) : LoginStatus() // ADD PASSWORD IN CONSTRUCTOR
+
+object LoginError : LoginStatus()
