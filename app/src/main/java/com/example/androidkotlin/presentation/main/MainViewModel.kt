@@ -35,14 +35,24 @@ class MainViewModel(
 
     }
 
- /*   fun onClickedLogin(emailUser: String) {
+    fun onClickedCreateAccount(emailUser: String, password: String) {
         viewModelScope.launch(Dispatchers.IO){
-            createUserUseCase.invoke(User(emailUser))
-            //    text.value = "Changed Text"
-            delay(1000)
-            val user = getUserUseCase.invoke("test")
+            //val user = createUserUseCase.invoke(User(emailUser, password)) //SHOULD ADD IF ALREADY EXIST
+            val user = getUserUseCase.invoke(emailUser, password)
+
+            val loginStatus = if(user == null){
+                createUserUseCase.invoke(User(emailUser, password))
+                AccountSuccess(emailUser, password)
+
+            }else{
+                AccountError
+            }
+
+            withContext(Dispatchers.Main) {
+                loginLiveData.value = loginStatus
+            }
         }
 
-    }*/
+    }
 
 }

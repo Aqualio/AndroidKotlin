@@ -9,9 +9,9 @@ class UserRepository(
     private val databaseDao: DatabaseDao
     ) {
 
-    suspend fun createUser(user: User){
+    suspend fun createUser(user: User?){
 
-        databaseDao.insert(user.toData())
+        databaseDao.insert(user?.toData())
 
     }
 

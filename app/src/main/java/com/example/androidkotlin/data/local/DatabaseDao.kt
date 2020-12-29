@@ -16,7 +16,7 @@ interface DatabaseDao {
     fun findByName(email: String, password: String): UserLocal?
 
     @Insert
-    fun insert(user: UserLocal)
+    fun insert(user: UserLocal?)
 
  /*   @Delete
     fun delete(user: UserLocal)*/

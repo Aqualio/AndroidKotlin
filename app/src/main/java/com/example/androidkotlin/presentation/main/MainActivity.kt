@@ -29,14 +29,26 @@ class MainActivity : AppCompatActivity() {
                 }
                 .show()
                 }
+                AccountError -> {MaterialAlertDialogBuilder(this)
+                .setTitle("Error")
+                .setMessage("Account already in the Database")
+                .setPositiveButton("OK"){
+                    dialog, which -> dialog.dismiss()
+                }
+                .show()
+                }
+                is AccountSuccess -> {
+                    //MONTRER LA LISTE
+                }
 
             }
         })
         login_button.setOnClickListener{
             mainViewModel.onClickedLogin(login_edit.text.toString().trim(), password_edit.text.toString())
         }
-      /*  mainViewModel.text.observe(this, Observer {
-            value -> main_text.text = value
-        })*/
+        create_account_button.setOnClickListener{
+            mainViewModel.onClickedCreateAccount(login_edit.text.toString().trim(), password_edit.text.toString())
+        }
+
     }
 }
