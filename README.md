@@ -37,7 +37,7 @@ https://github.com/Aqualio/AndroidKotlin
 
 ### Premier écran:
   - La liste des différentes races du jeu Skyrim  
-![Screenshot_20200621-221840_Skyrim_Races_Description](https://raw.githubusercontent.com/Aqualio/AndroidKotlin/master/readme_img/Screenshots_login.PNG)
+![image](https://raw.githubusercontent.com/Aqualio/AndroidKotlin/master/readme_img/Screenshots_login.PNG)
 ### Deuxieme écran:
   - Lorsque l'on clique sur une des races, les details et des informations sur celle-ci apparaissent 
 ![Screenshot_20200621-221857_Skyrim_Races_Description](https://user-images.githubusercontent.com/60584997/85234567-7beea280-b40e-11ea-9d47-3955f13fbf63.jpg)
