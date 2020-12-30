@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.androidkotlin.domain.entity.User
 import com.example.androidkotlin.domain.usecase.*
+import com.example.androidkotlin.presentation.status.*
 import kotlinx.coroutines.*
 
 

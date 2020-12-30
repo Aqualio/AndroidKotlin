@@ -1,4 +1,4 @@
-package com.example.androidkotlin.presentation.main
+package com.example.androidkotlin.presentation.status
 
 sealed class LoginStatus
 
