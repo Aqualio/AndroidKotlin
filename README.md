@@ -40,3 +40,8 @@ https://github.com/Aqualio/AndroidKotlin
   - Lorsque l'utilisateur veut créer un compte avec des indentifiants mais que ceux-ci existent déja dans dans la base donnée, cette erreur sort:
   
 ![image](https://github.com/Aqualio/AndroidKotlin/blob/master/readme_img/Screenshots_account_creation_error.PNG)
+
+### Deuxième écran:
+  - Lorsque l'utilisateur s'est identifié la liste est affichée
+  
+![image](https://github.com/Aqualio/AndroidKotlin/blob/master/readme_img/Screenshots_list.PNG)
