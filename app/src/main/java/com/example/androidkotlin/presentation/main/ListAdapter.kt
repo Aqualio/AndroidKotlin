@@ -46,7 +46,7 @@ class ListAdapter(
         @SuppressLint("SetTextI18n")
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             val currentRace: Skyrimraces = values[position]
-            holder.txtHeader.text = currentRace.name
+            holder.txtHeader.text = currentRace.Name
         }
 
         override fun getItemCount(): Int {

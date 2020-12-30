@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createListActivity(){
-        val intent = Intent(this, ListActivity::class.java)
+        val intent = Intent(this, com.example.androidkotlin.presentation.main.ListActivity::class.java)
         this.startActivity(intent)
     }
 }

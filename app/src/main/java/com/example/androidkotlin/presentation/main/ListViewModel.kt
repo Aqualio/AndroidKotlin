@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ListViewModel(
 ): ViewModel() {
     val apiLiveData: MutableLiveData<APIStatus> = MutableLiveData()
-    private val BASE_URL = "https://raw.githubusercontent.com/Aqualio/TD3_list/master"
+    private val BASE_URL = "https://raw.githubusercontent.com/Aqualio/TD3_list/master/"
 
     fun makeAPICall() {
     //    viewModelScope.launch(Dispatchers.IO) {
@@ -46,7 +46,7 @@ class ListViewModel(
                         response: Response<RestSkyrimResponse?>
                     ) {
                         if (response.isSuccessful && response.body() != null) {
-                            val charaList = response.body()!!.liste
+                            val charaList = response.body()!!.Liste
                             apiLiveData.value = APISuccess(charaList)
                         }
                     }
