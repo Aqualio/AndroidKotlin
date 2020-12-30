@@ -32,7 +32,11 @@ https://github.com/Aqualio/AndroidKotlin
   
 ![image](https://raw.githubusercontent.com/Aqualio/AndroidKotlin/master/readme_img/Screenshots_login.PNG)
 ### Premier écran (erreur Login):
-  - Lorsque l'utilisateur veut se connecter avec des indentifiants mais que ceux-ci ne sont pas dans la base donnée, cette erreur sort:
+  - Lorsque l'utilisateur veut se connecter avec des identifiants mais que ceux-ci ne sont pas dans la base donnée, cette erreur sort:
+  
 ![image](https://github.com/Aqualio/AndroidKotlin/blob/master/readme_img/Screenshots_login_error.PNG)
 
-
+### Premier écran (erreur Creation Compte):
+  - Lorsque l'utilisateur veut créer un compte avec des indentifiants mais que ceux-ci existent déja dans dans la base donnée, cette erreur sort:
+  
+![image](https://github.com/Aqualio/AndroidKotlin/blob/master/readme_img/Screenshots_account_creation_error.PNG)
